@@ -1,0 +1,135 @@
+body {
+    font-family: sans-serif !important;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 7px;
+}
+
+header .btn {
+    padding: 7px 25px 7px 25px;
+    font-size: 13px !important;
+}
+
+header ol {
+    display: inline;
+}
+
+header ol li {
+    list-style: none;
+    display: inline;
+    font-size: 13px;
+    padding-right: 7px;
+}
+
+header ol li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .btn {
+    font-size: 13px !important;
+    margin: 10px;
+    padding: 7px 20px;
+}
+
+.container .btn:hover {
+    border: 1px solid #c6c6c6;
+}
+
+.row1 {
+    margin-top: 10px;
+}
+
+.row1>img {
+    margin: none !important;
+    width: 275px;
+}
+
+.row1>ol>li {
+    color: #3e3e3e;
+    list-style: none;
+    display: inline;
+    font-size: 13px !important;
+    padding: 3px;
+}
+
+input {
+    width: 50%;
+    padding: 10px 50px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    margin: 15px !important;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png) no-repeat,
+        url(../svg/search.svg) no-repeat;
+    background-position: right 10px center, left 10px center;
+    background-size: 15px, 24px;
+}
+
+input:hover {
+    box-shadow: 2px 2px 5px 0px #cdcdcd;
+}
+
+input:focus {
+    outline: none;
+}
+
+a:link {
+    color: #4258d6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #f4f4f4;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    padding: 10px;
+    color: #848484;
+}
+
+footer ol {
+    list-style: none;
+    display: flex;
+}
+
+footer ol li {
+    margin-right: 30px;
+}
+
+.row2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foot1 {
+    font-size: 13px;
+}
+
+.foot1 ol li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    input {
+        width: 90%;
+    }
+
+    footer ol {
+        flex-direction: column;
+    }
+}
