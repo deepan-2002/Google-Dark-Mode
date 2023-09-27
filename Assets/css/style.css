@@ -1,5 +1,23 @@
+:root {
+    --body-color: black;
+    --body-bg: #fff;
+    --translate-color: #3e3e3e;
+    --footer-bg: #f4f4f4;
+    --footer-color: #848484;
+}
+
+.dark-mode {
+    --body-color: #fff;
+    --body-bg: #202124;
+    --translate-color: #bdc1c6;
+    --footer-bg: #171717;
+    --footer-color: #9aa0a6;
+}
+
 body {
     font-family: sans-serif !important;
+    background-color: var(--body-bg) !important;
+    color: var(--body-color) !important;
 }
 
 header {
@@ -54,7 +72,7 @@ header ol li:hover {
 }
 
 .row1>ol>li {
-    color: #3e3e3e;
+    color: var(--translate-color);
     list-style: none;
     display: inline;
     font-size: 13px !important;
@@ -92,12 +110,12 @@ a:hover {
 }
 
 footer {
-    background-color: #f4f4f4;
+    background-color: var(--footer-bg);
     position: fixed;
     bottom: 0%;
     width: 100%;
     padding: 10px;
-    color: #848484;
+    color: var(--footer-color);
 }
 
 footer ol {
@@ -125,8 +143,22 @@ footer ol li {
 }
 
 @media only screen and (max-width: 768px) {
+    header{
+        margin-bottom: 30px;
+    }
+    header .btn{
+        padding: 5px 10px !important;
+    }
     input {
         width: 90%;
+    }
+
+    .row1>img {
+        width: 200px;
+    }
+
+    #icon{
+        display: none;
     }
 
     footer ol {
